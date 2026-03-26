@@ -4,7 +4,6 @@ import com.cybersoft.jpabai3.dto.request.CreateCategoryRequest;
 import com.cybersoft.jpabai3.dto.request.ProductInCategoryRequest;
 import com.cybersoft.jpabai3.service.CategoryService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
