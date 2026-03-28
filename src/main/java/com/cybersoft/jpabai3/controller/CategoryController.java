@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/category")
 @RequiredArgsConstructor
 public class CategoryController {
-    private final CategoryService  categoryService;
+    private final CategoryService categoryService;
 
 
     @PostMapping
     public ResponseEntity<?> createCategory(@RequestBody CreateCategoryRequest request) {
         categoryService.createCategory(request);
-        return ResponseEntity.ok(HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
 

@@ -7,6 +7,7 @@ import com.cybersoft.jpabai3.repository.CourseRepository;
 import com.cybersoft.jpabai3.service.StudentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +15,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/student")
 @RequiredArgsConstructor
 public class StudentController {
-    private final StudentService studentService;
+
+    @Autowired
+    private StudentService studentService;
     private final CourseRepository courseRepository;
 
     @GetMapping

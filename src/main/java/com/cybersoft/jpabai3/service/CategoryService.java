@@ -1,7 +1,6 @@
 package com.cybersoft.jpabai3.service;
 
 import com.cybersoft.jpabai3.dto.request.CreateCategoryRequest;
-import com.cybersoft.jpabai3.dto.request.CreateProductRequest;
 import com.cybersoft.jpabai3.dto.request.ProductInCategoryRequest;
 import com.cybersoft.jpabai3.dto.response.ProductResponse;
 import com.cybersoft.jpabai3.entity.product.CategoryEntity;
@@ -48,5 +47,8 @@ public class CategoryService {
             return productResponse;
         }).toList();
     }
+
+
+
 
 }
